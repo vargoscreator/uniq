@@ -740,9 +740,13 @@ main.main{
 }
 .blockContent-types .blockContent__item-image{
     margin-bottom: 25px;
+    height: 205px;
 }
 .blockContent-types .blockContent__item-title h3{
     color: #fff;
+}
+.blockContent-types .blockContent__item-title h3:hover{
+    color: #D9D9D9;
 }
 .blockContent__more-mobile,
 .swiper-pagination-content{
@@ -764,6 +768,9 @@ main.main{
     .blockContent__more{
         max-width: 220px;
         width: 220px;
+    }
+    .blockContent-types .blockContent__item-image{
+        height: 210px;
     }
 }
 @media (max-width: 767px) {
