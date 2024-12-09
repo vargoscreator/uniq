@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (window.innerWidth <= 768) {
             sliderElements.forEach((slider, index) => {
                 if (!slider.classList.contains('swiper-initialized')) {
-                    const paginationElement = slider.querySelector('.swiper-pagination-content'); // Найти пагинацию внутри слайдера
+                    const paginationElement = slider.querySelector('.swiper-pagination-content');
                     if (paginationElement) {
                         swipers[index] = new Swiper(slider, {
                             autoHeight: true,
@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             spaceBetween: 25,
                             pagination: {
                                 el: paginationElement,
+                                clickable: true,
                             },
                         });
                     }
@@ -78,3 +79,29 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+if (document.querySelector('.logoBlock__slider')) {
+    const logoBlockSliderElements = document.querySelector('.logoBlock__slider');
+    const logoBlockPaginationElement = logoBlockSliderElements.querySelector('.swiper-pagination-content');
+    let logoBlockSlider = new Swiper(logoBlockSliderElements, {
+        autoHeight: true,
+        slidesPerView: 3,
+        spaceBetween: 10,
+        pagination: {
+            el: logoBlockPaginationElement,
+            clickable: true
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 4,
+            },
+            1000: {
+                slidesPerView: 6,
+            },
+            1280: {
+                slidesPerView: 8,
+            }
+        }
+    });
+}
