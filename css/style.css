@@ -1451,6 +1451,7 @@ ol li.strong-li p{
     justify-content: center;
     width: 100%;
     height: auto;
+    opacity: 0.6;
 }
 .logoBlock__item img{
     width: 100%;
