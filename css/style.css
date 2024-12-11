@@ -1351,6 +1351,7 @@ ol li.strong-li p{
 }
 .contact__metrics-flag > *{
     max-width: 100%;
+    width: 100%;
 }
 .contact__metrics-num{
     font-size: 14px;
