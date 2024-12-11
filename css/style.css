@@ -1437,6 +1437,7 @@ ol li.strong-li p{
     width: 100%;
     transition: none;
     overflow: hidden;
+    display: flex;
 }
 .logoBlock__slider .swiper-wrapper{
     align-items: stretch;
