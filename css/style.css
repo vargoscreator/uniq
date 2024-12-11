@@ -1437,7 +1437,6 @@ ol li.strong-li p{
     width: 100%;
     transition: none;
     overflow: hidden;
-    display: flex;
 }
 .logoBlock__slider .swiper-wrapper{
     align-items: stretch;
@@ -1479,6 +1478,9 @@ ol li.strong-li p{
 }
 .logoBlock .swiper-pagination-content .swiper-pagination-bullet.swiper-pagination-bullet-active{
     background: #4063C1;
+}
+.logoBlock .swiper-pagination-content.swiper-pagination-lock{
+    margin-top: 0;
 }
 @media (max-width: 1279px) {
     .logoBlock__slider{
