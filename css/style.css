@@ -1057,8 +1057,13 @@ ol li.strong-li p{
     transition: all .2s ease;
     text-decoration: none;
 }
+.footer__contact-name:hover,
 .footer__menu ul li a:hover{
     color: #4063C1;
+}
+.footer__contact-name{
+    display: flex;
+    max-width: max-content;
 }
 .footer__copy{
     color: #FFF;
