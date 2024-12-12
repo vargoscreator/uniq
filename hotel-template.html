@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/maplibre-gl@3.0.0/dist/maplibre-gl.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -108,7 +109,9 @@
                     </div>
                     <div class="article__content">
                         <div class="article__image">
-                            <img loading="lazy" src="img/template/hotel/1.webp" alt="">
+                            <div class="article__image-content">
+                                <img loading="lazy" src="img/template/hotel/1.webp" alt="">
+                            </div>                            
                         </div>
                         <p>The JO&JOE Vienna is a hip hotel/hostel on the fifth and sixth floors of IKEA at Vienna's Westbahnhof, famous for its striking architecture. <br>Vienna's centrally located IKEA has a metal skeleton frame with modular containers filling the gaps and solar panels on its rooftop. Bird nests, beehives, 160 trees, solar energy—all these unusual features are packed into the new IKEA building in the center of Austria's capital. It's an unusually cool sight!</p>
                         <br>
@@ -123,11 +126,16 @@
                             The store has over 3,000 items in stock for take-away. All larger products are delivered by electric vehicles or can be ordered for collection via Click & Collect. Welcome to the new and comfy world of city dwellers!
                         </p>
                         <div class="article__image">
-                            <img loading="lazy" src="img/template/hotel/2.webp" alt="">
+                            <div class="article__image-content">
+                                <img loading="lazy" src="img/template/hotel/2.webp" alt="">
+                            </div>                            
+                            <p class="article__image-copy">The world's highest treehouse</p>
                         </div>
                         <p>Jo&Joe Vienna is a fruitful collaboration between two famous brands, IKEA and Accor Hotels. It's like a typical IKEA store with practical home stuff and meat (or nowadays more like plant-based) balls, but with two extra floors and a rooftop to fill it with life even after the opening hours. There is even a cinema room in this quirky hotel/hostel!</p>
                         <div class="article__image">
-                            <img loading="lazy" src="img/template/hotel/3.webp" alt="">
+                            <div class="article__image-content">
+                                <img loading="lazy" src="img/template/hotel/3.webp" alt="">
+                            </div>                            
                         </div>
                         <p>Jo&Joe Vienna is a fruitful collaboration between two famous brands, IKEA and Accor Hotels. It's like a typical IKEA store with practical home stuff and meat (or nowadays more like plant-based) balls, but with two extra floors and a rooftop to fill it with life even after the opening hours. There is even a cinema room in this quirky hotel/hostel!</p>
                         <br>
@@ -135,12 +143,29 @@
                         <br>
                         <p>Although there is already <a href="https://www.uniqhotels.com/ikea-hotel/" target="_blank">an IKEA Hotel—the only one in the world—</a>, it's just a regular hotel, while this Jo&Joe in Vienna mixes the advantages of an IKEA store, hotel, hostel, and even rooftop bar.</p>
                         <div class="article__image">
-                            <img loading="lazy" src="img/template/hotel/4.webp" alt="">
+                            <div class="article__image-content">
+                                <img loading="lazy" src="img/template/hotel/4.webp" alt="">
+                            </div>                            
                         </div>
                         <p>The hostel's relaxed atmosphere is created by its down-to-earth and friendly staff and the street art decorating the public spaces and rooms. The interiors have been transformed into stunning works of art by international urban artists Lady K, Reso, Dinho Bento, and Skirl.</p>
                         <p>The shared rooftop of IKEA and the hostel has one of the best views of Vienna. As you can imagine, this kind of panorama works as a magnet, and IKEA/Jo&Joe organizes events there from time to time. If you are lucky, you can participate in a free open-air yoga class during your stay.</p>
                         <br>
                         <p>The best part of this hostel is that when you have a major hangover after a fun night out, you can get the all-so-familiar comfort food of IKEA a few floors below the hostel, including their snack bar with hot dogs and meatballs. Plus, at IKEA cafe, you can start your day with the cheapest breakfast you can find in all of Vienna!</p>
+                        <br>
+                        <div class="article__content-video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/EalsfRu_4_8?si=X6X3KwgxDk3ZkD6T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="article__content-banner">
+                            <a class="article__banner-btn btn" href="#">Book Online</a>
+                            <p class="article__banner-price">Prices from $25</p>
+                        </div>
+                        <div id="map">
+                            <div id="locationsmap"></div>
+                        </div>
+                        <br>
+                        <div class="article__adress">
+                            <p><strong>Main Street, Huay Xai 05000, Laos</strong></p>
+                        </div>
                         <br>
                         <div class="article__content-tags">
                             <p class="article__tags-name">Tags:</p>
@@ -165,10 +190,69 @@
             <div class="container">
                 <div class="blockContent__inner">
                     <div class="blockContent__top blockContent__top-center">
-                        <h2 class="blockContent__title">Related Hotels</h2>
+                        <h2 class="blockContent__title">Related hotels</h2>
                     </div>
                     <div class="blockContent__content slider-content">
                         <div class="swiper-wrapper">
+                            <div class="blockContent__item swiper-slide">
+                                <a class="blockContent__item-image" href="#">
+                                    <img loading="lazy" src="img/hotels/1.webp" alt="">
+                                </a>
+                                <a class="blockContent__item-title" href="#">
+                                    <h3>Hotels Overlooking Central Park</h3>
+                                </a>
+                                <div class="blockContent__item-locations">
+                                    <a href="#">Ostuni</a>
+                                    <a href="#">Italy</a>
+                                    <a href="#">West Europe</a>
+                                </div>
+                                <p>New York City, famed for its iconic skyline, vibrant culture, and endless opportunities, is also home to some of the world's coolest and most unique hotels...</p>
+                                <div class="blockContent__item-tags">
+                                    <a href="#">Eco-Friendly</a>
+                                    <a href="#">Industrial</a>
+                                    <a href="#">Traditional</a>
+                                </div>
+                            </div>
+
+                            <div class="blockContent__item swiper-slide">
+                                <a class="blockContent__item-image" href="#">
+                                    <img loading="lazy" src="img/hotels/2.webp" alt="">
+                                </a>
+                                <a class="blockContent__item-title" href="#">
+                                    <h3>Inara Camp</h3>
+                                </a>
+                                <div class="blockContent__item-locations">
+                                    <a href="#">Ostuni</a>
+                                    <a href="#">Italy</a>
+                                    <a href="#">West Europe</a>
+                                </div>
+                                <p>New York City, famed for its iconic skyline, vibrant culture, and endless opportunities, is also home to some of the world's coolest and most unique hotels...</p>
+                                <div class="blockContent__item-tags">
+                                    <a href="#">Industrial</a>
+                                    <a href="#">Traditional</a>
+                                </div>
+                            </div>
+
+                            <div class="blockContent__item swiper-slide">
+                                <a class="blockContent__item-image" href="#">
+                                    <img loading="lazy" src="img/hotels/3.webp" alt="">
+                                </a>
+                                <a class="blockContent__item-title" href="#">
+                                    <h3>Hobitennango</h3>
+                                </a>
+                                <div class="blockContent__item-locations">
+                                    <a href="#">Antigua</a>
+                                    <a href="#">Guatemala</a>
+                                    <a href="#">Central America</a>
+                                </div>
+                                <p>New York City, famed for its iconic skyline, vibrant culture, and endless opportunities, is also home to some of the world's coolest and most unique hotels...</p>
+                                <div class="blockContent__item-tags">
+                                    <a href="#">Eco-Friendly</a>
+                                    <a href="#">Industrial</a>
+                                    <a href="#">Traditional</a>
+                                </div>
+                            </div>
+
                             <div class="blockContent__item swiper-slide">
                                 <a class="blockContent__item-image" href="#">
                                     <img loading="lazy" src="img/hotels/4.webp" alt="">
@@ -285,6 +369,7 @@
                                     <a href="#">Traditional</a>
                                 </div>
                             </div>
+                            
                         </div>    
                         <span class="swiper-pagination-content"></span>                        
                     </div>
@@ -354,8 +439,10 @@
             </div>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="js/maplibre-gl.js"></script>
+    <script src="js/location.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -721,6 +721,12 @@ ol li.strong-li p{
 .blockContent__item-title + p{
     margin-top: 25px;
 }
+.blockContent__item-distance{
+    margin-top: -27px;
+    margin-bottom: 5px;
+    font-size: 14px !important;
+    text-align: right;
+}
 .blockContent__item p{
     font-size: 20px;
     line-height: 24px;
@@ -735,7 +741,7 @@ ol li.strong-li p{
 .blockContent__item-locations{
     display: flex;
     align-items: center;
-    gap: 9px;
+    gap: 2px 9px;
     flex-wrap: wrap;
     margin-top: 15px;
     margin-bottom: 25px;
@@ -1861,10 +1867,12 @@ ol li.strong-li p{
     margin-top: 35px;
 }
 .sectionContent__content{
-    display: none;
-}
-.sectionContent__content.active{
     display: block;
+    position: relative;
+}
+.sectionContent__content > span{
+    position: absolute;
+    top: -150px;
 }
 .sectionContent__content h2{
     text-align: center;
@@ -2069,22 +2077,33 @@ ol li.strong-li p{
 }
 .article__image{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 50px 0;
+    position: relative;
+}
+.article__image-content{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     border-radius: 20px;
     overflow: hidden;
     height: 599px;
-    margin: 50px 0;
 }
-.article__image img{
+.article__image-content img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     transition: all .5s ease;
 }
-.article__image:hover img{
+.article__image-content:hover img{
     transform: scale(1.1);
+}
+.article__image-copy{
+    font-size: 15px;
 }
 .article__content-banner{
     margin: 35px 0;
@@ -2181,6 +2200,22 @@ ol li.strong-li p{
     color: #4063C1;
     text-decoration: none;
 }
+.article #map{
+    height: 400px;
+    overflow: hidden;
+}
+.article__content-video{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 525px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.article__content-video > *{
+    width: 100%;
+    height: 100%;
+}
 @media (max-width: 767px) {
     .article{
         margin-top: 35px;
@@ -2218,10 +2253,11 @@ ol li.strong-li p{
     .article__locations-content a, .article__locations-name{
         font-size: 16px;
     }
-
     .article__image{
-        height: 237px;
         margin: 35px 0;
+    }
+    .article__image-content{
+        height: 237px;
         border-radius: 10px;
     }
     .article__content p{
@@ -2243,6 +2279,13 @@ ol li.strong-li p{
     .article__top-locations a, .article__locations-name{
         font-size: 16px;
         line-height: 30px;
+    }
+    .article #map{
+        height: 350px !important;
+    }
+    .article__content-video{
+        height: auto;
+        border-radius: 10px;
     }
 }
 /* article page END*/
