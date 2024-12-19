@@ -778,7 +778,8 @@ ol li.strong-li p{
     content: ',';
 }
 .blockContent__item-tags{
-    margin-top: 25px;
+    padding-top: 25px;
+    margin-top: auto;
     display: flex;
     align-items: center;
     gap: 7px;
