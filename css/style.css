@@ -2140,6 +2140,82 @@ ol li.strong-li p{
     font-weight: 700;
     max-width: 369px;
 }
+.article__content-date{
+    margin: 35px 0;
+    border-radius: 6px;
+    background: #E1E7F8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 26px;
+}
+.article__content-date--content{
+    width: 100%;
+    max-width: 369px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.article__content-date--content label{
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+.article__content-date--content label span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+}
+.article__content-date--content input,
+.article__content-date--content input::placeholder{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    color: #9F9F9F
+}
+.article__content-date--content input {
+    color: #000;
+    border: none;
+    outline: none;
+    height: auto;
+    width: 100%;
+    padding: 9px 23px;
+    border-radius: 6px;
+    background: #FFF;
+    height: 54px;
+    color: #000;
+}
+.drp-buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: end;
+}
+.daterangepicker.show-calendar .drp-buttons{
+    display: flex !important;
+}
+.daterangepicker .drp-buttons .btn {
+    margin-left: 0;
+    font-size: 12px;
+    line-height: normal;
+    font-weight: bold;
+    padding: 4px 8px;
+    height: auto;
+    max-width: 90px;
+}
+.cancelBtn.btn{
+    background-color: transparent;
+    color: #4063C1;
+}
+.cancelBtn.btn:hover{
+    color: #fff;
+}
 .article__banner-price{
     font-size: 18px;
 }
@@ -2289,6 +2365,11 @@ ol li.strong-li p{
         margin-right: -90px;
         padding: 21px 90px 10px;
     }
+    .article__content-date{
+        margin-left: -90px;
+        margin-right: -90px;
+        padding: 30px 90px;
+    }
     .article__content-tags{
         padding: 24px 19px;
     }
@@ -2306,6 +2387,12 @@ ol li.strong-li p{
     .article__content-video{
         height: auto;
         border-radius: 10px;
+    }
+    .daterangepicker.show-calendar .drp-buttons{
+        flex-direction: column;
+    }
+    .cancelBtn.btn{
+        order: 1;
     }
 }
 /* article page END*/
