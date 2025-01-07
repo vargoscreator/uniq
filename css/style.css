@@ -2084,6 +2084,7 @@ ol li.strong-li p{
 .article__content{
     margin-top: 50px;
 }
+.article__content h3,
 .article__content h2{
     margin-bottom: 35px;
 }
