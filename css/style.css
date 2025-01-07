@@ -704,6 +704,8 @@ ol li.strong-li p{
     object-fit: cover;
     object-position: center;
     transition: all .5s ease;
+    display: flex;
+    align-items: center;
 }
 .blockContent__item-image:hover img{
     transform: scale(1.1);
@@ -2100,6 +2102,9 @@ ol li.strong-li p{
     margin: 50px 0;
     position: relative;
 }
+.article__image:nth-of-type(1) .article__image-content{
+    height: 599px;
+}
 .article__image-content{
     display: flex;
     flex-direction: column;
@@ -2107,7 +2112,6 @@ ol li.strong-li p{
     width: 100%;
     border-radius: 20px;
     overflow: hidden;
-    height: 599px;
 }
 .article__image-content.image_wrapper{
     cursor: zoom-in;
