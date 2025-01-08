@@ -463,11 +463,16 @@ ol li.strong-li p{
     display: none;
 }
 @media (max-width: 1279px) {
-    .header__menu-buttons,
     .header__menu ul,
     .header__inner,
     .header__menu {
         gap: 15px;
+    }
+    .header__menu-buttons{
+        gap: 5px;
+    }
+    .header__menu ul li a, .header__menu ul li p{
+        font-size: 16px;
     }
 }
 @media (max-width: 999px) {
@@ -537,6 +542,15 @@ ol li.strong-li p{
         top: -15px;
         right: -5px;
     }
+    .header__menu ul li p{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    .header__menu ul li p span{
+        display: none;
+    }
 }
 @media (max-width: 767px) {
     .header__logo{
@@ -554,6 +568,9 @@ ol li.strong-li p{
     }
     .header__user-content{
         border-radius: 10px;
+    }
+    .header__menu ul li p{
+        padding-bottom: 0;
     }
 }
 .hero{
