@@ -43,42 +43,42 @@
                         <li>
                             <a href="about.html">About</a>
                         </li>
-                    </ul>
-                    <div class="header__menu-buttons">
-                        <div class="header__user">
-                            <button class="header__user-button btn-2">Login/ Sign up</button>
-                            <div class="header__user-container">
-                                <div class="header__user-content">
-                                    <div class="header__user-selects">
-                                        <button class="header__user-select active">Log in</button>
-                                        <button class="header__user-select">Sign Up</button>
-                                        <button class="header__user-close">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
-                                                <path d="M36.4168 12.2865L33.7143 9.58398L23.0002 20.2982L12.286 9.58398L9.5835 12.2865L20.2977 23.0007L9.5835 33.7148L12.286 36.4173L23.0002 25.7032L33.7143 36.4173L36.4168 33.7148L25.7027 23.0007L36.4168 12.2865Z" fill="black"/>
-                                            </svg>
-                                        </button>
+                        <div class="header__menu-buttons">
+                            <div class="header__user">
+                                <button class="header__user-button btn-2">Login/ Sign up</button>
+                                <div class="header__user-container">
+                                    <div class="header__user-content">
+                                        <div class="header__user-selects">
+                                            <button class="header__user-select active">Log in</button>
+                                            <button class="header__user-select">Sign Up</button>
+                                            <button class="header__user-close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                                                    <path d="M36.4168 12.2865L33.7143 9.58398L23.0002 20.2982L12.286 9.58398L9.5835 12.2865L20.2977 23.0007L9.5835 33.7148L12.286 36.4173L23.0002 25.7032L33.7143 36.4173L36.4168 33.7148L25.7027 23.0007L36.4168 12.2865Z" fill="black"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <form class="header__user-form active" id="login" action="#">
+                                            <input type="email" name="email" placeholder="Your Email" required>
+                                            <input type="password" name="password" placeholder="Password" required>
+                                            <a class="header__user-reset" href="#">Forgot Password?</a>
+                                            <button class="header__user-btn btn" type="submit">Log in </button>
+                                            <p class="header__user-or">or</p>
+                                            <button class="header__user-facebook" type="button">Login with Facebook</button>
+                                        </form>
+                                        <form class="header__user-form" id="sign" action="#">
+                                            <input type="text" name="username" placeholder="Username" required>
+                                            <input type="email" name="email" placeholder="Email" required>
+                                            <input type="text" name="password" placeholder="Password" required>
+                                            <input type="text" name="confirm-password" placeholder="Confirm Passoword" required>
+                                            <button class="header__user-btn btn" type="submit">Log in</button>
+                                        </form>
                                     </div>
-                                    <form class="header__user-form active" id="login" action="#">
-                                        <input type="email" name="email" placeholder="Your Email" required>
-                                        <input type="password" name="password" placeholder="Password" required>
-                                        <a class="header__user-reset" href="#">Forgot Password?</a>
-                                        <button class="header__user-btn btn" type="submit">Log in </button>
-                                        <p class="header__user-or">or</p>
-                                        <button class="header__user-facebook" type="button">Login with Facebook</button>
-                                    </form>
-                                    <form class="header__user-form" id="sign" action="#">
-                                        <input type="text" name="username" placeholder="Username" required>
-                                        <input type="email" name="email" placeholder="Email" required>
-                                        <input type="text" name="password" placeholder="Password" required>
-                                        <input type="text" name="confirm-password" placeholder="Confirm Passoword" required>
-                                        <button class="header__user-btn btn" type="submit">Log in</button>
-                                    </form>
                                 </div>
                             </div>
+                           
+                            <a class="header__menu-contact btn" href="contact-us.html">Contact</a>
                         </div>
-                       
-                        <a class="header__menu-contact btn" href="contact-us.html">Contact</a>
-                    </div>
+                    </ul>
                 </nav>
                 <button class="header__burger">
                     <svg xmlns="http://www.w3.org/2000/svg" width="29" height="21" viewBox="0 0 29 21" fill="none">
@@ -679,7 +679,7 @@
                                 <a href="types.html">Hotel Categories</a>
                             </li>
                             <li>
-                                <a href="#">Login / Sign Up</a>
+                                <p class="header__user-button-footer">Login / Sign Up</p>
                             </li>
                         </ul>
                         <ul>

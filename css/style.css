@@ -462,11 +462,17 @@ ol li.strong-li p{
 .header__burger.active svg:first-of-type{
     display: none;
 }
+.header__user-button-footer{
+    cursor: pointer;
+}
+.header__user-button-footer:hover{
+    color: #4063C1;
+}
 @media (max-width: 1279px) {
     .header__menu ul,
     .header__inner,
     .header__menu {
-        gap: 15px;
+        gap: 14px;
     }
     .header__menu-buttons{
         gap: 5px;
@@ -482,18 +488,22 @@ ol li.strong-li p{
         background-color: #fff;
         flex-direction: column;
         justify-content: start;
-        padding: 30px 26px;
+        padding: 0;
         z-index: -10;
         border-radius: 0px 0px 20px 20px;
         box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.25);
         top: 80px;
-        overflow: auto;
+        overflow: hidden;
         gap: 34px;
         transform: translateX(200%);
         transition: all .3s ease;
     }
     .header__menu.active{
         transform: translateX(0);
+    }
+    .header__menu ul{
+        overflow: auto;
+        padding: 30px 26px;
     }
     .header__burger{
         display: flex;
@@ -528,6 +538,7 @@ ol li.strong-li p{
         width: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 12;
+        overflow: auto;
     }
     .header__user-content{
         margin: 20% 26px;
@@ -558,6 +569,8 @@ ol li.strong-li p{
     }
     .header__menu{
         top: 65px;
+    }
+    .header__menu ul{
         padding-top: 52px;
     }
     .header__menu ul li p,

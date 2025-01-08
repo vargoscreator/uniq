@@ -51,19 +51,25 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     const headerUserButton = document.querySelector('.header__user-button');
+    const headerUserButtonFooter = document.querySelector('.header__user-button-footer');
     const headerUserContainer = document.querySelector('.header__user-container');
     const headerUserContent = document.querySelector('.header__user-content');
     const headerUserClose = document.querySelector('.header__user-close');
     headerUserButton.addEventListener('click', ()=>{
         event.stopPropagation();
         headerUserContainer.classList.toggle('active');
-    })
+    });
+    headerUserButtonFooter.addEventListener('click', ()=>{
+        headerUserContainer.classList.toggle('active');
+        headerMenuButton.classList.toggle('active');
+        headerMenu.classList.toggle('active');
+    });
     headerUserClose.addEventListener('click', ()=>{
         headerUserContainer.classList.remove('active');
     })
 
     document.addEventListener('click', (event) => {
-        if (!headerUserContent.contains(event.target) && !headerUserButton.contains(event.target)) {
+        if (!headerUserContent.contains(event.target) && !headerUserButton.contains(event.target) && !headerUserButtonFooter.contains(event.target)) {
             headerUserContainer.classList.remove('active');
         }
     });
