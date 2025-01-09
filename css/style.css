@@ -2432,3 +2432,39 @@ ol li.strong-li p{
     }
 }
 /* article page END*/
+
+/* maplibregl */
+.maplibregl-popup-content{
+    padding: 10px !important;
+    max-width: 260px;
+}
+.maplibregl-popup-content a{
+    display: flex;
+    align-items: start;
+}
+.maplibregl-popup-content a img{
+    width: 80px !important;
+    height: 80px;
+    border-radius: 4px;
+    object-position: center;
+    object-fit: cover;
+}
+.maplibregl-popup-content a h4{
+    margin: 0 20px !important;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+.maplibregl-popup-close-button{
+    right: 10px !important;
+    font-size: 30px;
+}
