@@ -2154,6 +2154,8 @@ ol li.strong-li p{
     object-fit: cover;
     object-position: center;
     transition: all .5s ease;
+    display: flex;
+    align-items: center;
 }
 .article__image-content:hover img{
     transform: scale(1.1);
