@@ -132,19 +132,19 @@ html,body{
 h1{
     font-size: 60px;
     font-weight: 700;
-    line-height: 56px;
+    line-height: 1.1em;  
 }
 h2{
     color: #010101;
     font-size: 45px;
     font-weight: 700;
-    line-height: 56px;
+    line-height: 1.3em; 
 }
 h3{
     color: #010101;
     font-size: 32px;
     font-weight: 700;
-    line-height: 25px;  
+    line-height: 1.3em;  
 }
 main.main{
     padding-top: 88px;
@@ -235,11 +235,9 @@ ol li.strong-li p{
     }
     h1{
         font-size: 42px;
-        line-height: 45px;
     }
     h2{
         font-size: 32px;
-        line-height: 35px;
     }
 }
 /* Start header */
@@ -2133,7 +2131,7 @@ ol li.strong-li p{
     margin: 50px 0;
     position: relative;
 }
-.article__image:nth-of-type(1) .article__image-content{
+.article__content > .article__image .article__image-content{
     height: 599px;
 }
 .article__image-content{
@@ -2390,8 +2388,10 @@ ol li.strong-li p{
     .article__image{
         margin: 35px 0;
     }
-    .article__image-content{
+    .article__content > .article__image .article__image-content{
         height: 237px;
+    }
+    .article__image-content{
         border-radius: 10px;
     }
     .article__content p{
@@ -2437,12 +2437,13 @@ ol li.strong-li p{
 
 /* maplibregl */
 .maplibregl-popup-content{
-    padding: 10px !important;
-    max-width: 260px;
+    padding: 0px !important;
+    max-width: 310px;
 }
 .maplibregl-popup-content a{
     display: flex;
     align-items: start;
+    padding: 10px !important;
 }
 .maplibregl-popup-content a img{
     width: 80px !important;
@@ -2451,7 +2452,7 @@ ol li.strong-li p{
     object-position: center;
     object-fit: cover;
 }
-.maplibregl-popup-content a h4{
+.maplibregl-popup-content a h4 {
     margin: 0 20px !important;
     font-family: 'Lato', sans-serif;
     color: #000;
@@ -2459,8 +2460,8 @@ ol li.strong-li p{
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     max-width: 100%;
