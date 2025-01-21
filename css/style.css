@@ -2151,12 +2151,8 @@ ol li.strong-li p{
     height: 100%;
     object-fit: cover;
     object-position: center;
-    transition: all .5s ease;
     display: flex;
     align-items: center;
-}
-.article__image-content:hover img{
-    transform: scale(1.1);
 }
 .article__image-copy{
     font-size: 15px;
