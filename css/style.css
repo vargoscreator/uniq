@@ -428,6 +428,10 @@ ol li.strong-li p{
     height: 49px;
     position: relative;
     transition: all .2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .header__user-facebook::before{
     content: '';
@@ -2123,6 +2127,16 @@ ol li.strong-li p{
 .article__content p + p{
     margin-top: 35px;
 }
+.article__content h4 a
+.article__content h3 a,
+.article__content h2 a{
+    transition: all .2s ease;
+}
+.article__content h4 a:hover,
+.article__content h3 a:hover,
+.article__content h2 a:hover{
+    color: #4063C1;
+}
 .article__image{
     display: flex;
     flex-direction: column;
@@ -2395,14 +2409,14 @@ ol li.strong-li p{
         line-height: 30px;
     }
     .article__content-banner{
-        margin-left: -90px;
-        margin-right: -90px;
-        padding: 21px 90px 10px;
+        margin-left: -26px;
+        margin-right: -26px;
+        padding: 21px 26px 10px;
     }
     .article__content-date{
-        margin-left: -90px;
-        margin-right: -90px;
-        padding: 30px 90px;
+        margin-left: -26px;
+        margin-right: -26px;
+        padding: 30px 26px;
     }
     .article__content-tags{
         padding: 24px 19px;
