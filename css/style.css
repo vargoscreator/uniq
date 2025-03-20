@@ -2188,6 +2188,10 @@ ol li.strong-li p{
 .article__image-copy{
     font-size: 15px;
 }
+.article__content-banner + h3,
+.article__content-banner + h2{
+    margin-top: 50px;
+}
 .article__content-banner{
     margin: 35px 0;
     border-radius: 6px;
