@@ -1067,13 +1067,15 @@ ol li.strong-li p{
     width: 100%;
 }
 .footer__inner{
+    border-radius: 30px;
+    background: #1E1E1E;
+    padding: 45px 103px;
+}
+.footer__top{
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     gap: 40px;
-    border-radius: 30px;
-    background: #1E1E1E;
-    padding: 45px 103px;
 }
 .footer__content{
     width: 100%;
@@ -1125,6 +1127,14 @@ ol li.strong-li p{
     line-height: 30px;
     margin-top: 20px;
 }
+.footer__info{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 40px;
+    text-align: center;
+}
 .footer__contact-block{
     margin-top: 15px;
     display: flex;
@@ -1166,7 +1176,7 @@ ol li.strong-li p{
         border-radius: 10px;
     }
     .footer__menu,
-    .footer__inner{
+    .footer__top{
         flex-direction: column;
         gap: 22px;
     }
