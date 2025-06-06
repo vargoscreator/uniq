@@ -1209,16 +1209,6 @@ input{
     width: 100%;
     max-width: 850px;
 }
-.contact__start{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-.contact__start .search-form{
-    max-width: 400px;
-    margin: 0;
-}
 .contact__form{
     margin-top: 50px;
 }
@@ -1432,12 +1422,6 @@ input{
 @media (max-width: 1279px) {
     .contact__form-box{
         grid-template-columns: 1fr;
-    }
-    .contact__start{
-        flex-direction: column;
-    }
-    .contact__start .search-form{
-        max-width: 554px;
     }
 }
 @media (max-width: 999px) {
