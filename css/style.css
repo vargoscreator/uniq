@@ -259,6 +259,11 @@ input{
         font-size: 32px;
     }
 }
+@media (max-width: 767px) {
+    h1 {
+        font-size: 35px;
+    }
+}
 /* Start header */
 .header{
     position: fixed;
@@ -1846,11 +1851,8 @@ input{
     gap: 20px;
 }
 .sectionContent__title{
-    max-width: 884px;
+    max-width: 100%;
     text-align: left;
-}
-.sectionContent__title-blog{
-    max-width: 584px;
 }
 .sectionContent__descr{
     margin-top: 50px;
