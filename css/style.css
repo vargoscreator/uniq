@@ -2534,3 +2534,6 @@ input{
         max-width: 100%;
     }
 }
+.mv-ad-box{
+    margin: 50px 0 !important;
+}
