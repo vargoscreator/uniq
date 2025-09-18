@@ -2166,6 +2166,9 @@ input{
 .article__content h2 a:hover{
     color: #4063C1;
 }
+.article__content h2{
+    margin-top: 35px;
+}
 .article__image{
     display: flex;
     flex-direction: column;
