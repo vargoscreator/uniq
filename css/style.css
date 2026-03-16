@@ -259,11 +259,6 @@ input{
         font-size: 32px;
     }
 }
-@media (max-width: 767px) {
-    h1 {
-        font-size: 35px;
-    }
-}
 /* Start header */
 .header{
     position: fixed;
@@ -884,6 +879,56 @@ input{
     right: 32px;
     pointer-events: none;
 }
+
+/* ── MORE button card ── */
+.blockContent__item-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 286px;
+    border-radius: 20px;
+    background: rgba(89, 123, 217, 0.07);
+    text-decoration: none;
+    transition: background .2s ease, border-color .2s ease;
+    gap: 14px;
+}
+.blockContent__item-more:hover {
+    background: rgba(89, 123, 217, 0.16);
+    border-color: #2a4aaa;
+}
+.blockContent__item-more > *{
+    transition: all .5s ease !important;
+}
+.blockContent__item-more:hover > *{
+    transform: scale(1.1);
+}
+.blockContent__item-more__arrow {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #4063C1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s ease, transform .2s ease;
+}
+.blockContent__item-more:hover .blockContent__item-more__arrow {
+    background: #2a4aaa;
+}
+.blockContent__item-more__arrow svg {
+    display: block;
+}
+.blockContent__item-more__label {
+    font-size: 22px;
+    font-weight: 700;
+    color: #4063C1;
+    letter-spacing: 0.01em;
+}
+.blockContent__item-more__sub {
+    font-size: 15px;
+    color: #6b7a99;
+}
 .popular-hotels .blockContent__inner{
     padding: 80px 60px;
     border-radius: 20px;
@@ -1034,6 +1079,9 @@ input{
     }
     .blockContent__more-second{
         margin-top: 35px;
+    }
+    .blockContent__item-more {
+        height: 100% !important;
     }
 }
 .section-line hr{
@@ -1851,8 +1899,11 @@ input{
     gap: 20px;
 }
 .sectionContent__title{
-    max-width: 100%;
+    max-width: 884px;
     text-align: left;
+}
+.sectionContent__title-blog{
+    max-width: 584px;
 }
 .sectionContent__descr{
     margin-top: 50px;
@@ -2165,9 +2216,6 @@ input{
 .article__content h3 a:hover,
 .article__content h2 a:hover{
     color: #4063C1;
-}
-.article__content h2{
-    margin-top: 35px;
 }
 .article__image{
     display: flex;
@@ -2537,6 +2585,4 @@ input{
         max-width: 100%;
     }
 }
-.mv-ad-box{
-    margin: 50px 0 !important;
-}
+
